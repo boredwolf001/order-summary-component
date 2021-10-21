@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  font-weight: 500;
+  font-family: 'Red Hat Display', sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: hsl(225, 100%, 98%);
+}
+
+.order-summary {
+  border-radius: 10px;
+  display: flex;
+  width: 25rem;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+  padding: 0 0 50px 0;
+}
+
+.order-summary .banner {
+  border-radius: 10px 10px 0 0;
+  width: 100%;
+  display: block;
+  margin-bottom: 30px;
+}
+
+.order-summary .title {
+  font-weight: 900;
+  margin-bottom: 15px;
+}
+
+.order-summary .subtitle {
+  max-width: 300px;
+  color: hsl(224, 23%, 55%);
+}
+
+.order-summary .plan-container {
+  margin: 15px 0;
+  border-radius: 10px;
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+  width: 18rem;
+  padding: 1rem 0.9rem;
+  background-color: hsl(225, 100%, 98%);
+}
+
+.order-summary .text-box {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+.order-summary .text-box .text {
+  margin-left: 0.9rem;
+  text-align: left;
+}
+
+.order-summary .text-box .text .plan-text {
+  font-weight: 700;
+}
+
+.order-summary .text-box .text .plan-price {
+  margin-top: 8px;
+  color: hsl(224, 23%, 55%);
+  font-size: 0.9rem;
+}
+
+.order-summary a {
+  margin: auto 0;
+  color: hsl(245, 75%, 52%);
+}
+
+.order-summary a:hover {
+  text-decoration: none;
+  opacity: 0.9;
+}
+
+.order-summary .proceed {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 1rem;
+  background-color: hsl(245, 75%, 52%);
+  color: #fff;
+  padding: 1rem 5rem;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  margin: 20px 0;
+  transition: opacity 0.18s linear;
+}
+
+.order-summary .proceed:hover {
+  opacity: 0.8;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.order-summary .cancel {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 1rem;
+  color: hsl(224, 23%, 55%);
+  border: none;
+  background: none;
+  cursor: pointer;
+  transition: color 0.18s linear;
+}
+
+.order-summary .cancel:hover {
+  color: hsl(223, 47%, 23%);
+}
+
+@media (max-width: 430px) {
+  body {
+    font-size: 15px;
+  }
+
+  .order-summary {
+    width: 23rem;
+  }
+}
+
+@media (max-width: 375px) {
+  body {
+    font-size: 14px;
+  }
+
+  .order-summary {
+    width: 21rem;
+  }
+}
