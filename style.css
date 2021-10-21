@@ -49,13 +49,14 @@ body {
 }
 
 .order-summary .plan-container {
-  margin: 15px 0;
+  margin-top: 20px;
+  margin-bottom: 15px;
   border-radius: 10px;
   display: flex;
   align-content: center;
   justify-content: space-between;
-  width: 18rem;
-  padding: 1rem 0.9rem;
+  width: 18.8rem;
+  padding: 1rem 1.4rem;
   background-color: hsl(225, 100%, 98%);
 }
 
@@ -80,12 +81,12 @@ body {
   font-size: 0.9rem;
 }
 
-.order-summary a {
+.order-summary .plan-container a {
   margin: auto 0;
   color: hsl(245, 75%, 52%);
 }
 
-.order-summary a:hover {
+.order-summary .plan-container a:hover {
   text-decoration: none;
   opacity: 0.9;
 }
@@ -93,7 +94,7 @@ body {
 .order-summary .proceed {
   font-family: inherit;
   font-weight: 700;
-  font-size: 1rem;
+  font-size: 0.9rem;
   background-color: hsl(245, 75%, 52%);
   color: #fff;
   padding: 1rem 5rem;
@@ -113,7 +114,7 @@ body {
 .order-summary .cancel {
   font-family: inherit;
   font-weight: 700;
-  font-size: 1rem;
+  font-size: 0.9rem;
   color: hsl(224, 23%, 55%);
   border: none;
   background: none;
